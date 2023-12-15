@@ -1,0 +1,37 @@
+{
+  "name": "nike-store-commerce",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.11",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@splidejs/react-splide": "^0.7.10",
+    "framer-motion": "^10.16.16",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^6.21.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.12",
+    "jsdom": "^23.0.1",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "vite": "^5.0.9",
+    "vitest": "^1.0.4"
+  }
+}
