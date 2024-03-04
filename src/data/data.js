@@ -3,6 +3,7 @@ import heroimg from "/hero.png";
 import hightlightimgp from "/placeholder/hightlightimg.jpg";
 import hightlightimg from "/hightlightimg.png";
 import sneakershoe from "/sneaker.png";
+import sneakershoep from "/placeholder/sneaker.jpg";
 
 import vcover1 from "/vcover1.png";
 import vcover2 from "/vcover2.png";
@@ -32,6 +33,19 @@ import product9 from "/product9.png";
 import product10 from "/product10.png";
 import product11 from "/product11.png";
 import product12 from "/product12.png";
+
+import productp1 from "/placeholder/product1.jpg";
+import productp3 from "/placeholder/product3.jpg";
+import productp4 from "/placeholder/product4.jpg";
+import productp2 from "/placeholder/product2.jpg";
+import productp5 from "/placeholder/product5.jpg";
+import productp6 from "/placeholder/product6.jpg";
+import productp7 from "/placeholder/product7.jpg";
+import productp8 from "/placeholder/product8.jpg";
+import productp9 from "/placeholder/product9.jpg";
+import productp10 from "/placeholder/product10.jpg";
+import productp11 from "/placeholder/product11.jpg";
+import productp12 from "/placeholder/product12.jpg";
 
 import facebook from "/facebook.svg";
 import instagram from "/instagram.svg";
@@ -117,6 +131,7 @@ const sneaker = {
   btn: "Explore More",
   url: "https://sneakernews.com/2022/03/21/nike-lebron-2-retro-white-midnight-navy-varsity-crimson-dr0826-100/",
   img: sneakershoe,
+  placeImg: sneakershoep,
 };
 
 const toprateslaes = {
@@ -129,6 +144,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product7,
+      placeImg: productp7,
       price: "150",
       color: "from-sky-600 to-indigo-600",
       shadow: "shadow-lg shadow-blue-500",
@@ -140,6 +156,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product2,
+      placeImg: productp2,
       price: "150",
       color: "from-green-500 to-emerald-500",
       shadow: "shadow-lg shadow-green-500",
@@ -151,6 +168,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product3,
+      placeImg: productp3,
       price: "150",
       color: "from-red-500 to-rose-500",
       shadow: "shadow-lg shadow-rose-500",
@@ -162,6 +180,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product4,
+      placeImg: productp4,
       price: "150",
       color: "from-orange-500 to-amber-500",
       shadow: "shadow-lg shadow-orange-500",
@@ -173,6 +192,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product5,
+      placeImg: productp5,
       price: "150",
       color: "from-gray-900 to-yellow-500",
       shadow: "shadow-lg shadow-yellow-500",
@@ -184,6 +204,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product6,
+      placeImg: productp6,
       price: "150",
       color: "from-blue-500 to-cyan-500",
       shadow: "shadow-lg shadow-cyan-500",
@@ -195,6 +216,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product1,
+      placeImg: productp1,
       price: "150",
       color: "from-yellow-500 to-yellow-500",
       shadow: "shadow-lg shadow-yellow-500",
@@ -206,6 +228,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product9,
+      placeImg: productp9,
       price: "150",
       color: "from-[#936550] to-orange-900",
       shadow: "shadow-lg shadow-orange-800",
@@ -217,6 +240,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product10,
+      placeImg: productp10,
       price: "150",
       color: "from-indigo-700 to-indigo-700",
       shadow: "shadow-lg shadow-indigo-500",
@@ -228,6 +252,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product12,
+      placeImg: productp12,
       price: "150",
       color: "from-green-600 to-lime-500",
       shadow: "shadow-lg shadow-lime-500",
@@ -239,6 +264,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product11,
+      placeImg: productp11,
       price: "150",
       color: "from-slate-900 to-black",
       shadow: "shadow-lg shadow-black",
@@ -250,6 +276,7 @@ const toprateslaes = {
       rating: "5+",
       btn: "Buy Now",
       img: product8,
+      placeImg: productp8,
       price: "150",
       color: "from-blue-900 to-blue-500",
       shadow: "shadow-lg shadow-blue-500",
