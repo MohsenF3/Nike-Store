@@ -3,11 +3,13 @@ import Clips from "./utils/Clips";
 import SocialLink from "./utils/SocialLink";
 import FadeIn from "./FadeIn";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import placeImg from "/placeholder/hero.jpg";
 
 const Hero = ({
   heroapi: { title, subtitle, btntext, img, sociallinks, videos },
 }) => {
-  // console.log(heroapi)
   return (
     <>
       <div className="relative h-auto w-auto flex flex-col">
@@ -29,7 +31,7 @@ const Hero = ({
             <div className="grid items-center gap-5 md:gap-3 absolute top-[33vh] lg:top-[27vh] left-[11%] xl:left-0 w-auto h-auto">
               {videos?.map((val, i) => (
                 <FadeIn key={i} delay={(i + 1) * 0.1} direction="right">
-                  <Clips imgsrc={val.imgsrc} />
+                  <Clips imgsrc={val.imgsrc} placeImg={val.placeImg} />
                 </FadeIn>
               ))}
             </div>
@@ -55,11 +57,13 @@ const Hero = ({
               ease: [0.25, 0.25, 0.25, 0.75],
             }}
           >
-            <div className="flex items-center">
-              <img
+            <div className=" transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill">
+              <LazyLoadImage
                 src={img}
+                placeholderSrc={placeImg}
                 alt="hero-img/img"
-                className="w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh] transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill"
+                effect="blur"
+                className="w-auto h-[45vh] lg:h-[35vh] md:h-[31vh] sm:h-[21vh] xsm:h-[19vh]"
               />
             </div>
           </motion.div>

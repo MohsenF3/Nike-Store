@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   selectCartItems,
@@ -11,12 +11,14 @@ import {
 import CartCount from "./cart/CartCount";
 import CartEmpty from "./cart/CartEmpty";
 import CartItem from "./cart/CartItem";
+import { useOnClickOutside } from "../lib/hooks";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const ifCartState = useSelector(selectCartState);
   const cartItems = useSelector(selectCartItems);
   const totalAmount = useSelector(selectTotalAmount);
+  const divRef = useRef(null);
 
   // Effect to recalculate totals when cart items change
   useEffect(() => {
@@ -37,6 +39,8 @@ const Cart = () => {
     dispatch(setClearCartItems());
   };
 
+  useOnClickOutside(divRef, onCartToggle);
+
   return (
     <>
       <div
@@ -47,6 +51,7 @@ const Cart = () => {
         }`}
       >
         <div
+          ref={divRef}
           className={`blur-effect-theme duration-500 h-screen max-w-xl w-full absolute right-0 ${
             ifCartState
               ? "opacity-100 visible translate-x-0"

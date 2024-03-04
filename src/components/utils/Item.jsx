@@ -1,10 +1,9 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import { StarIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
 import { setAddItemToCart, setOpenCart } from "../../slices/CartSlice";
-import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Item = ({
   ifExists,
@@ -14,42 +13,30 @@ const Item = ({
   title,
   text,
   img,
+  placeImg,
   btn,
   rating,
   price,
 }) => {
   //   console.log(id)
-  const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { userInfo } = useSelector((state) => state.auth);
 
   // Function to handle adding the item to the cart
   const onAddToCart = () => {
     // Create an object representing the item
     const item = { id, title, text, img, color, shadow, price };
 
-    // Check if the user is logged in
-    if (userInfo) {
-      dispatch(setAddItemToCart(item));
-    } else {
-      toast.error("First You Must Login");
-      navigate("/login");
-    }
+    dispatch(setAddItemToCart(item));
   };
 
   // Function to handle opening the cart
   const onCartToggle = () => {
     // Check if the user is logged in
-    if (userInfo) {
-      dispatch(
-        setOpenCart({
-          cartState: true,
-        })
-      );
-    } else {
-      toast.error("First You Must Login");
-      navigate("/login");
-    }
+    dispatch(
+      setOpenCart({
+        cartState: true,
+      })
+    );
   };
 
   return (
@@ -108,8 +95,10 @@ const Item = ({
             ifExists ? "absolute top-5 right-1" : "justify-center"
           }`}
         >
-          <img
+          <LazyLoadImage
+            loading="lazy"
             src={img}
+            placeholderSrc={placeImg}
             alt={`img/item-img/${id}`}
             className={`transitions-theme hover:-rotate-12 ${
               ifExists

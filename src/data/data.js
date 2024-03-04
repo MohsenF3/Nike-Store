@@ -1,41 +1,54 @@
-import heroimg from "../assets/hero.png";
+import heroimg from "/hero.png";
 
-import hightlightimg from "../assets/hightlightimg.png";
-import sneakershoe from "../assets/sneaker.png";
+import hightlightimgp from "/placeholder/hightlightimg.jpg";
+import hightlightimg from "/hightlightimg.png";
+import sneakershoe from "/sneaker.png";
 
-import vcover1 from "../assets/video/vcover1.png";
-import vcover2 from "../assets/video/vcover2.png";
-import vcover3 from "../assets/video/vcover3.png";
+import vcover1 from "/vcover1.png";
+import vcover2 from "/vcover2.png";
+import vcover3 from "/vcover3.png";
 
-import psale1 from "../assets/nike-air-red.png";
-import psale2 from "../assets/nike-adapt-bb.png";
-import psale3 from "../assets/nike-adapt-bb-smart.png";
+import vcoverp1 from "/placeholder/vcover1.jpg";
+import vcoverp2 from "/placeholder/vcover2.jpg";
+import vcoverp3 from "/placeholder/vcover3.jpg";
 
-import product1 from "../assets/product1.png";
-import product2 from "../assets/product2.png";
-import product3 from "../assets/product3.png";
-import product4 from "../assets/product4.png";
-import product5 from "../assets/product5.png";
-import product6 from "../assets/product6.png";
-import product7 from "../assets/product7.png";
-import product8 from "../assets/product8.png";
-import product9 from "../assets/product9.png";
-import product10 from "../assets/product10.png";
-import product11 from "../assets/product11.png";
-import product12 from "../assets/product12.png";
+import psale1 from "/nike-air-red.png";
+import psale2 from "/nike-adapt-bb.png";
+import psale3 from "/nike-adapt-bb-smart.png";
 
-import facebook from "../assets/facebook.svg";
-import instagram from "../assets/instagram.svg";
-import twitter from "../assets/twitter.svg";
-import youtube from "../assets/youtube.svg";
-import messenger from "../assets/messenger.svg";
+import psalep1 from "/placeholder/nike-air-red.jpg";
+import psalep2 from "/placeholder/nike-adapt-bb.jpg";
+import psalep3 from "/placeholder/nike-adapt-bb-smart.jpg";
+
+import product1 from "/product1.png";
+import product2 from "/product2.png";
+import product3 from "/product3.png";
+import product4 from "/product4.png";
+import product5 from "/product5.png";
+import product6 from "/product6.png";
+import product7 from "/product7.png";
+import product8 from "/product8.png";
+import product9 from "/product9.png";
+import product10 from "/product10.png";
+import product11 from "/product11.png";
+import product12 from "/product12.png";
+
+import facebook from "/facebook.svg";
+import instagram from "/instagram.svg";
+import twitter from "/twitter.svg";
+import youtube from "/youtube.svg";
+import messenger from "/messenger.svg";
 
 const heroapi = {
   title: "Play With Electric Nike",
   subtitle: "Adapt 2.0 Sneakers",
   img: heroimg,
   btntext: "Explore Product",
-  videos: [{ imgsrc: vcover1 }, { imgsrc: vcover2 }, { imgsrc: vcover3 }],
+  videos: [
+    { imgsrc: vcover1, placeImg: vcoverp1 },
+    { imgsrc: vcover2, placeImg: vcoverp2 },
+    { imgsrc: vcover3, placeImg: vcoverp3 },
+  ],
   sociallinks: [
     { icon: facebook },
     { icon: messenger },
@@ -55,6 +68,7 @@ const popularsales = {
       rating: "4.9",
       btn: "Buy Now",
       img: psale2,
+      placeImg: psalep2,
       price: "200",
       color: "from-blue-600 to-blue-500",
       shadow: "shadow-lg shadow-blue-500",
@@ -66,6 +80,7 @@ const popularsales = {
       rating: "4.5",
       btn: "Buy Now",
       img: psale1,
+      placeImg: psalep1,
       price: "200",
       color: "from-red-500 to-rose-500",
       shadow: "shadow-lg shadow-rose-500",
@@ -77,6 +92,7 @@ const popularsales = {
       rating: "5+",
       btn: "Buy Now",
       img: psale3,
+      placeImg: psalep3,
       price: "200",
       color: "from-violet-500 to-indigo-500",
       shadow: "shadow-lg shadow-violet-500",
@@ -91,6 +107,7 @@ const highlight = {
   btn: "Explore More",
   url: "https://www.nike.com/launch/t/nocta-hot-step-black-gold",
   img: hightlightimg,
+  placeImg: hightlightimgp,
 };
 
 const sneaker = {

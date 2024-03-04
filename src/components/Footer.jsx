@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { footerAPI } from "../data/data";
 
-const Footer = ({ footerAPI: { titles, links } }) => {
-  const [Year, setYear] = useState();
-  useEffect(() => {
-    const getYear = () => setYear(new Date().getFullYear());
-    getYear();
-  }, []);
+const Footer = () => {
+  const { titles, links } = footerAPI;
   return (
     <>
       <footer className="bg-theme pt-7 pb-5">

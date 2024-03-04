@@ -1,9 +1,10 @@
 import React from "react";
 import FadeIn from "./FadeIn";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const FlexContent = ({
   ifExists,
-  endpoint: { title, heading, text, img, btn, url },
+  endpoint: { title, heading, text, img, btn, url, placeImg },
 }) => {
   return (
     <>
@@ -39,8 +40,10 @@ const FlexContent = ({
         </FadeIn>
         <FadeIn delay={0.2} direction="left">
           <div className="flex items-center justify-center max-w-xl relative lg:max-w-none w-full">
-            <img
+            <LazyLoadImage
               src={img}
+              loading="lazy"
+              placeholderSrc={placeImg}
               alt={`img/${heading}`}
               className={`w-auto object-fill transitions-theme ${
                 ifExists
