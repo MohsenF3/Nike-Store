@@ -1,52 +1,3 @@
-import heroimg from "/hero.png";
-
-import hightlightimgp from "/placeholder/hightlightimg.jpg";
-import hightlightimg from "/hightlightimg.png";
-import sneakershoe from "/sneaker.png";
-import sneakershoep from "/placeholder/sneaker.jpg";
-
-import vcover1 from "/vcover1.png";
-import vcover2 from "/vcover2.png";
-import vcover3 from "/vcover3.png";
-
-import vcoverp1 from "/placeholder/vcover1.jpg";
-import vcoverp2 from "/placeholder/vcover2.jpg";
-import vcoverp3 from "/placeholder/vcover3.jpg";
-
-import psale1 from "/nike-air-red.png";
-import psale2 from "/nike-adapt-bb.png";
-import psale3 from "/nike-adapt-bb-smart.png";
-
-import psalep1 from "/placeholder/nike-air-red.jpg";
-import psalep2 from "/placeholder/nike-adapt-bb.jpg";
-import psalep3 from "/placeholder/nike-adapt-bb-smart.jpg";
-
-import product1 from "/product1.png";
-import product2 from "/product2.png";
-import product3 from "/product3.png";
-import product4 from "/product4.png";
-import product5 from "/product5.png";
-import product6 from "/product6.png";
-import product7 from "/product7.png";
-import product8 from "/product8.png";
-import product9 from "/product9.png";
-import product10 from "/product10.png";
-import product11 from "/product11.png";
-import product12 from "/product12.png";
-
-import productp1 from "/placeholder/product1.jpg";
-import productp3 from "/placeholder/product3.jpg";
-import productp4 from "/placeholder/product4.jpg";
-import productp2 from "/placeholder/product2.jpg";
-import productp5 from "/placeholder/product5.jpg";
-import productp6 from "/placeholder/product6.jpg";
-import productp7 from "/placeholder/product7.jpg";
-import productp8 from "/placeholder/product8.jpg";
-import productp9 from "/placeholder/product9.jpg";
-import productp10 from "/placeholder/product10.jpg";
-import productp11 from "/placeholder/product11.jpg";
-import productp12 from "/placeholder/product12.jpg";
-
 import facebook from "/facebook.svg";
 import instagram from "/instagram.svg";
 import twitter from "/twitter.svg";
@@ -56,12 +7,12 @@ import messenger from "/messenger.svg";
 const heroapi = {
   title: "Play With Electric Nike",
   subtitle: "Adapt 2.0 Sneakers",
-  img: heroimg,
+  img: "/hero.png",
   btntext: "Explore Product",
   videos: [
-    { imgsrc: vcover1, placeImg: vcoverp1 },
-    { imgsrc: vcover2, placeImg: vcoverp2 },
-    { imgsrc: vcover3, placeImg: vcoverp3 },
+    { imgsrc: "/vcover1.png", hashSrc: "LF5X:0%7w|$dOwOHNfNYavavbIkD" },
+    { imgsrc: "/vcover2.png", hashSrc: "L86%dWEr5X}uWvWbfBbK0w$x=y5Q" },
+    { imgsrc: "/vcover3.png", hashSrc: "LDF?Fg9DVW9F~BM{9b-;RhD*~qRP" },
   ],
   sociallinks: [
     { icon: facebook },
@@ -81,8 +32,8 @@ const popularsales = {
       text: "MEN Running Shoes",
       rating: "4.9",
       btn: "Buy Now",
-      img: psale2,
-      placeImg: psalep2,
+      img: "/nike-adapt-bb.png",
+      hashSrc: "LHCPn+O=-pD%?^v~SgRP-;E0xut7",
       price: "200",
       color: "from-blue-600 to-blue-500",
       shadow: "shadow-lg shadow-blue-500",
@@ -93,8 +44,8 @@ const popularsales = {
       text: "MEN Running Shoes",
       rating: "4.5",
       btn: "Buy Now",
-      img: psale1,
-      placeImg: psalep1,
+      img: "/nike-air-red.png",
+      hashSrc: "LBCQAX%C?84p=+N1o%Mv~qIUxtob",
       price: "200",
       color: "from-red-500 to-rose-500",
       shadow: "shadow-lg shadow-rose-500",
@@ -105,8 +56,8 @@ const popularsales = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: psale3,
-      placeImg: psalep3,
+      img: "/nike-adapt-bb-smart.png",
+      hashSrc: "L5FPEk?Q9D00W44,.ARlOM0L~W?I",
       price: "200",
       color: "from-violet-500 to-indigo-500",
       shadow: "shadow-lg shadow-violet-500",
@@ -120,8 +71,8 @@ const highlight = {
   text: "Our Purpose is to move the world forward. We take action by building community, protecting our planet and increasing access to sport.",
   btn: "Explore More",
   url: "https://www.nike.com/launch/t/nocta-hot-step-black-gold",
-  img: hightlightimg,
-  placeImg: hightlightimgp,
+  img: "/hightlightimg.png",
+  hashSrc: "LHB:HY]{~VocPD57S*oM^+aK%MR-",
 };
 
 const sneaker = {
@@ -130,8 +81,8 @@ const sneaker = {
   text: "The radiance lives on Nike Sneakers Air Lancing Shoes, the basket ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
   btn: "Explore More",
   url: "https://sneakernews.com/2022/03/21/nike-lebron-2-retro-white-midnight-navy-varsity-crimson-dr0826-100/",
-  img: sneakershoe,
-  placeImg: sneakershoep,
+  img: "/sneaker.png",
+  hashSrc: "L7IY5]00xb4n0000_4~qV]_2og~q",
 };
 
 const toprateslaes = {
@@ -143,8 +94,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product7,
-      placeImg: productp7,
+      img: "/product7.png",
+      hashSrc: "LMIOw@D%-joK00D*t5$~~n%NNLxV",
       price: "150",
       color: "from-sky-600 to-indigo-600",
       shadow: "shadow-lg shadow-blue-500",
@@ -155,8 +106,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product2,
-      placeImg: productp2,
+      img: "/product2.png",
+      hashSrc: "LNDLc74-+*o||+Olrw#FM1%3Xhv+",
       price: "150",
       color: "from-green-500 to-emerald-500",
       shadow: "shadow-lg shadow-green-500",
@@ -167,8 +118,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product3,
-      placeImg: productp3,
+      img: "/product3.png",
+      hashSrc: "LBINH=00P;%#LeDN-Du43=_4#Qn-",
       price: "150",
       color: "from-red-500 to-rose-500",
       shadow: "shadow-lg shadow-rose-500",
@@ -179,8 +130,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product4,
-      placeImg: productp4,
+      img: "/product4.png",
+      hashSrc: "LDJ7]-4TS#%#caODsqrpD$~WoyJV",
       price: "150",
       color: "from-orange-500 to-amber-500",
       shadow: "shadow-lg shadow-orange-500",
@@ -191,8 +142,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product5,
-      placeImg: productp5,
+      img: "/product5.png",
+      hashSrc: "LLE30T4T-;%L~qMwt7xvNe-;R%bI",
       price: "150",
       color: "from-gray-900 to-yellow-500",
       shadow: "shadow-lg shadow-yellow-500",
@@ -203,8 +154,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product6,
-      placeImg: productp6,
+      img: "/product6.png",
+      hashSrc: "L8HfuK8{v^%#4T0|]-:${a-oNg-7",
       price: "150",
       color: "from-blue-500 to-cyan-500",
       shadow: "shadow-lg shadow-cyan-500",
@@ -215,8 +166,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product1,
-      placeImg: productp1,
+      img: "/product1.png",
+      hashSrc: "LNLWqD7Q5J,,EVI]s.-4IEVs$^xA",
       price: "150",
       color: "from-yellow-500 to-yellow-500",
       shadow: "shadow-lg shadow-yellow-500",
@@ -227,8 +178,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product9,
-      placeImg: productp9,
+      img: "/product9.png",
+      hashSrc: "LCMQO$1n4n}*00EnN#,+0LX8gPVr",
       price: "150",
       color: "from-[#936550] to-orange-900",
       shadow: "shadow-lg shadow-orange-800",
@@ -239,8 +190,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product10,
-      placeImg: productp10,
+      img: "/product10.png",
+      hashSrc: "LKI5AQBtIR-OzmIWS7nL?rERo$--",
       price: "150",
       color: "from-indigo-700 to-indigo-700",
       shadow: "shadow-lg shadow-indigo-500",
@@ -251,8 +202,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product12,
-      placeImg: productp12,
+      img: "/product12.png",
+      hashSrc: "LIH{uH0.DJ#X{;TuR.#UUoXAk.s%",
       price: "150",
       color: "from-green-600 to-lime-500",
       shadow: "shadow-lg shadow-lime-500",
@@ -263,8 +214,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product11,
-      placeImg: productp11,
+      img: "/product11.png",
+      hashSrc: "L8LN_X#7009E00~W589Z00kW_4M{",
       price: "150",
       color: "from-slate-900 to-black",
       shadow: "shadow-lg shadow-black",
@@ -275,8 +226,8 @@ const toprateslaes = {
       text: "MEN Running Shoes",
       rating: "5+",
       btn: "Buy Now",
-      img: product8,
-      placeImg: productp8,
+      img: "/product8.png",
+      hashSrc: "LBFZ504T5j%e_MaP9vxq_0_2E8IU",
       price: "150",
       color: "from-blue-900 to-blue-500",
       shadow: "shadow-lg shadow-blue-500",

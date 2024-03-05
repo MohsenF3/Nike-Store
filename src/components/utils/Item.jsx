@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 
 import { StarIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
 import { setAddItemToCart, setOpenCart } from "../../slices/CartSlice";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import CustomImage from "../CustomImage";
 
 const Item = ({
   ifExists,
@@ -13,7 +13,7 @@ const Item = ({
   title,
   text,
   img,
-  placeImg,
+  hashSrc,
   btn,
   rating,
   price,
@@ -95,10 +95,9 @@ const Item = ({
             ifExists ? "absolute top-5 right-1" : "justify-center"
           }`}
         >
-          <LazyLoadImage
-            loading="lazy"
+          <CustomImage
             src={img}
-            placeholderSrc={placeImg}
+            hashSrc={hashSrc}
             alt={`img/item-img/${id}`}
             className={`transitions-theme hover:-rotate-12 ${
               ifExists
